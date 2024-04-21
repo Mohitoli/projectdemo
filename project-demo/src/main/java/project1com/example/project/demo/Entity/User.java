@@ -29,7 +29,7 @@ public class User {
      private String password;
      private String role;
       private boolean enabled;
-      private  String imageurl;
+      private  String Stringimageurl;
       @Column(length = 500)
        private String about;
 

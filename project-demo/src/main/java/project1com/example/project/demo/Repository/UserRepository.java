@@ -9,4 +9,5 @@ import project1com.example.project.demo.Entity.User;
 public interface UserRepository extends  CrudRepository<User,Integer> {
     @Query("select u from User u where u.email=:email")
     public User getUserByUserName(@Param("email") String email);
+
 }

@@ -15,4 +15,5 @@ public interface ContactRepository extends CrudRepository<Contact,Integer> {
 
     @Query("from Contact as d where d.user.id=:userId")
     public Page<Contact> findContactsByUser(@Param("userId")int userId, Pageable pageable);
+
 }

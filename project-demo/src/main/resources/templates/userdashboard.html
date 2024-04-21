@@ -6,9 +6,20 @@
 </head>
 <body>
 <section>
-<h1>Welcome to Data User</h1>
-<h1>User Name <span th:text="${user.name}"></span></h1>
-<h1>User Email <span th:text="${user.email}"></span></h1>
+    <div class="container mr-3 ml-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="container text-center ml-3">
+                 <img src="" style="height:200px; width:200px;" th:src="@{'/img/default.png'}" class="profile_photo " alt="profile_pic" >
+                </div>
+                <h1 class="text-center">
+                    Start Adding Your Contact
+                </h1>
+                <a type="submit" class="btn btn-primary btn-block text-uppercase mt-4" th:href="@{/user/addcontact}">ADD CONTACT</a>
+
+            </div>
+        </div>
+    </div>
 </section>
 </body>
 </html>

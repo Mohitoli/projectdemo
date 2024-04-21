@@ -99,3 +99,7 @@ cursor:pointer;
 
 
 }
+.profile_photo{
+border-radius:50%;
+object-fill:cover;
+}

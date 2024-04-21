@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">This is home page</title>
+</head>
+<body>
+<section class="banner">
+    <div class="text-center heading" style="justify-content:center; align-items: center; min-height: 100vh;  display: flex;
+">
+    <h1>Welcome To Student-ERP </h1>
+    <a class="btn btn-primary btn-lg ml-3" href="#" th:href="@{/Signin}">Get Start</a>
+    </div>
+
+
+</section>
+
+</body>
+</html>

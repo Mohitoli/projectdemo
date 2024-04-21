@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"  th:replace="~{normal/base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+    <div class="card col-md-10 offset-md-1">
+        <div class="card-body">
+
+            <h1 class="text-center">  Update Contact  </h1>
+            <div class="container-fluid mt-1">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <form action="#"
+                              th:object="${contact}"
+                              enctype="multipart/form-data"
+                              method="post"
+                              th:action="@{/user/process-update}"
+                              class="mt-2">
+
+                            <input type="hidden"  th:value="${contact.cId}" name="cId">
+
+                            <!-- First-Name   -->
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text ">
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+
+                                </div>
+                                <input th:value="${contact.name}" required type="text" id="name" name="name"  class="form-control" placeholder="Enter The Name" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <!--  Secondname   -->
+                            <div class="input-group flex-nowrap mt-4" >
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text ">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+
+                                </div>
+                                <input th:value="${contact.secondName}" required type="text" id="secondName" name="secondName" class="form-control" placeholder="Enter the Nick Name" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+
+
+                            <!-- Phone Number -->
+                            <div class="input-group flex-nowrap mt-4" >
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+
+                                </div>
+                                <input th:value="${contact.phone}" required type="number" id="phone" name="phone" class="form-control" placeholder="Enter the Phone Number" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+
+                            <!--  E- Mail       -->
+
+                            <div class="input-group flex-nowrap mt-4" >
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text ">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+
+                                </div>
+                                <input th:value="${contact.email}" required type="text" id="email" name="email" class="form-control" placeholder="Enter the Email Name" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+
+
+                            <!-- Work-->
+                            <div class="input-group flex-nowrap mt-4" >
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text ">
+                                        <i class="fa-regular fa-briefcase"></i>
+                                    </div>
+
+                                </div>
+                                <input th:value="${contact.work}" required type="text" id="work" name="work" class="form-control" placeholder="Enter the Work" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <!--Description -->
+                            <div class="form-group mt-3">
+                                <textarea th:text="${contact.description}" name="description"  class="form-control" placeholder="Write the Description" id="description" rows="10"></textarea>
+                            </div>'
+                            <div class="container">
+                            <img src=""  class="profile_photo" style="height:250px; width:250px"  th:src="@{'/img/'+${contact.Stringimageurl}}" alt="Image">
+                            </div>
+                            <div class="custom-file">
+                                <input type="file"  name="profileimage">
+                            </div>
+
+                            <div class="container">
+                                <button type="submit" class="btn btn-primary" >Save Contact</button>
+
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+</body>
+</html>
+

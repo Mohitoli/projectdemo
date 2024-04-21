@@ -37,7 +37,7 @@ public class myconfig {
         return daoAuthenticationProvider;
 
     }
-    //config  method
+    //config  method with using database(daomethod)
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
          auth.authenticationProvider(authenticationProvider());
 
@@ -55,7 +55,10 @@ public class myconfig {
                               .requestMatchers("/**")
                .permitAll().anyRequest().authenticated()
                  ).formLogin(formLogin->formLogin
-              .loginPage("/Signin").loginProcessingUrl("/dologin").defaultSuccessUrl("/user/index").permitAll())
+              .loginPage("/Signin")
+                      .loginProcessingUrl("/dologin")
+                      .defaultSuccessUrl("/user/index")
+                      .permitAll())
                 .httpBasic(Customizer.withDefaults()).build();
 
 

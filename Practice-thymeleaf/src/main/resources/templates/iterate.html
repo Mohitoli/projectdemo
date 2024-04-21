@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is a loop example</h1>
+<h1 th:text="${names}"></h1>
+<ul>
+    <li th:each="n,status:${names}">
+        <span th:style="${status.odd}? 'font-weight:bold; color:red':' '" th:text="${status.index+1}+' '+${n}"></span>
+        <!-- th: each for loop to traverse the values
+              status.index shows current index values
+                size check no of element of list
+                even/odd check if the current iteration index is even or odd
+              !-->
+
+    </li>
+</ul>
+
+</body>
+</html>

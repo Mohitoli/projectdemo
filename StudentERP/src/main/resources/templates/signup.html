@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+>
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<section>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-5 offset-md-3">
+               <div class="card-body">
+
+                   <div th:if="${session.message}" th:classappend="${session.message.type}" class="alert" role="alert">
+                       <p1 th:text="${session.message.content}"></p1>
+                    <th:block th:text="${@sessionRemover.removemessagefromsession()}" ></th:block>
+
+                   </div>
+
+                    <div class="container text-center">
+
+                   <img src="#" alt="studentlogo" th:src="@{/img/Studentlogo.png}" style="width:100px;">
+                    </div>
+                        <h1 class="text-center">Register Here!!!</h1>
+
+                   <form action="#" th:action="@{/do-register}" method="post" th:object="${student}">
+                       <div class="form-group">
+                           <label for="exampleInputEmail1">Name</label>
+                           <input type="text"
+                                  class="form-control"
+                                  id="exampleInputName1"
+                                  th:value="${student.name}"
+                                  name="name"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Enter Name">
+                       </div>
+
+
+                       <div class="form-group">
+                           <label for="exampleInputEmail1">Course</label>
+                           <input type="text"
+                                  class="form-control"
+                                  name="course"
+                                  th:value="${student.course}"
+                                  id="exampleInputCourse1"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Enter Course">
+                       </div>
+
+
+                       <div class="form-group">
+                           <label for="exampleInputEmail1">Email</label>
+                           <input type="text"
+                                  class="form-control"
+                                  name="email"
+                                  th:value="${student.email}"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Enter Email">
+                       </div>
+
+
+                       <div class="form-group">
+                           <label for="exampleInputPassword1">Password</label>
+                           <input type="password"
+                                  class="form-control"
+                                  name="password"
+                                  th:value="${student.password}"
+                                  id="exampleInputPassword1"
+                                  placeholder="Password">
+                       </div>
+
+                       <div class="form-group">
+                           <textarea name="about"
+                                     th:value="${student.about}"
+                                     class="form-control"
+                                     id="about"
+                                     rows="5"
+                                     placeholder="About Here">
+
+                           </textarea>
+                       </div>
+
+
+                       <div class="form-group form-check text-center">
+                           <input type="checkbox" class="form-check-input" name="agreement" id="exampleCheck1">
+                           <label class="form-check-label" for="exampleCheck1">Accept terms and Condition!! </label>
+                       </div>
+                       <div class="text-center">
+                           <button type="submit" class="btn btn-success ">Submit</button>
+                       <button type="reset" class="btn btn-danger ">Reset</button>
+                       </div>
+
+                   </form>
+
+
+
+
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+</body>
+</html>
