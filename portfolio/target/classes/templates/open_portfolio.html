@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<section>
+<div class="main-container flex items-center py-20" id="home">
+    <div class="text-container  w-full flex justify-center">
+       <div>
+           <h3 class="text-3xl  font-semibold ">Hii, I am</h3>
+           <h1 class="text-5xl mt-4 font-bold">Mohit Singh Oli</h1>
+           <h2 class="text-3xl mt-4 ">I am Full Stack Developer</h2>
+           <p></p>
+
+           <div class="icon-container space-x-5 mt-3">
+               <a class="fa-brands fa-facebook fa-2xl" th:href="@{https://www.facebook.com/profile.php?id=100006236714911&mibextid=ZbWKwL}"></a>
+               <a class="fa-brands fa-instagram fa-2xl" style="color: #810808;" th:href="@{https://www.instagram.com/mohit__oli/}"></a>
+               <a class="fa-brands fa-linkedin fa-2xl" th:href="@{https://www.linkedin.com/in/mohit-singh-oli-b54546208}"></a>
+               <a class="fa-regular fa-envelope fa-2xl " th:href="@{https://mail.google.com/mohitsingholi07@gmail.com}"></a>
+           </div>
+
+
+       </div>
+    </div>
+
+    <div class="image-container w-full flex justify-center mt-2">
+    <img src="Mohit1.jpg" height="400px" width="400px" class="rounded-full shadow-lg">
+    </div>
+
+
+</div>
+
+</section>
+
+<section id="About">
+<div class="bg-gradient-to-r from-sky-500 to-indigo-500" id="About1">
+    <div class="second-container border py-16  ">
+        <h1 class="text-4xl pb-14 font-bold underline text-center mt-10  text-white ">About Me</h1>
+        <div class="flex items-center  space-y-6">
+        <div class="main-boximage w-full flex justify-center ">
+            <img src="animation.gif" alt="mohit" height="500" width="400" class="rounded-full  py-4 ">
+
+        </div>
+
+        <div class="read-more-content boxtext w-full flex justify-center bg-gradient-to-r from-sky-500 to-indigo-500 ">
+            <div class="space-y-5 w-2/3 ">
+               <div class="mb-3">
+           <h1 class="text-3xl font-semibold ">Java Developer & Web Developer</h1>
+               </div>
+             <p1 class="text1 text-white ">Hi, I am Mohit Singh Oli from New Delhi. i had done my bachelor of computer appication from Indraprastha Institue of Technology & Management in 2022,
+                 I'm currently pursuing masters of computer applications basically it's a 2 year program in India which is more likely inclined to application development. Criteria of MCA is after completion of bachelor in any field can pursue the MCA program.
+                 It give opportunity to enroll in technology and computer World.
+                 I had done my bachelor's of computer application from IITM Janakpuri in 2022.
+                 My primary skills are <span class="font-bold text-red-700">Java Spring boot </span>
+                 and Having a good knowledge in Databases like <span class="font-bold text-red-700">Postgres & Ms Sql Server</span>
+                 <span id="dots">...</span><span id="more-text" class=" text-white "> <h1 class="font-bold text-black text-2xl">Experience</h1>
+                   I have 4 months of experience in software development, i did  internship and full time trainee job in software companies. I did Internship
+                     from Cbsl group where i worked as <h1 class="text-red-700 font-bold">.Net Developer</h1> my role in that company was to build components
+                     which used in Web Application like:- Login pages,Otp generation,Crud operation using Databases,pdf convertor and many more. This internship
+                     Duration was for 2 months.
+                     <br>
+
+                     <br> Techpit Technologies i worked as a<h1 class="text-red-700 font-bold">Zoho Backend Developer</h1>My role in that company was to build Zoho application
+                     and resolving the bugs and issues,I worked there for 2 months as a Trainee position. I worked in several project including Manufacturing companies and Vendor Stock Company.
+                 </span>
+             </p1>
+                <div>
+                    <button  onclick="myFunction()" id="myBtn" name="submit" class="read-more-btn  bg-yellow-400 font-bold  rounded-2xl w-24 h-10 ">Read More</button>
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<section id="skills">
+    <div class="third-container bg-black" id="Skills1">
+        
+        <div>
+        <h1 class="text-center font-bold text-4xl text-white mt-10">Skills</h1>
+    </div>
+        <div class="flex flex-row ">
+        <div class="max-w-sm mt-16  ml-40 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                         <h1 class="text-center text-3xl font-bold text-red-600 ">Back-end</h1>
+
+            <div class="mt-3">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Java core</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring boot</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Security</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Javascript</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Oops Design</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Multithreading</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Android Development</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Zoho Development</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Deluge</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kotlin</h5>
+
+            </div>
+        </div>
+
+
+        <div class="max-w-sm mt-16 ml-10 p-6 bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <h1 class="text-center text-3xl font-bold text-red-600 ">Front-end</h1>
+
+            <div class="mt-3">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Html</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Css</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bootstrap</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tailwind css</h5>
+            </div>
+
+        </div>
+
+
+        <div class="max-w-sm mt-16 ml-10 p-6 bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <h1 class="text-center text-3xl font-bold text-red-600 ">Databases</h1>
+
+            <div class="mt-3">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Postgres</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ms Sql Server</h5>
+
+
+        </div>
+    </div>
+        <div class="max-w-sm mt-16 ml-10 p-6 bg-white border border-gray-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <h1 class="text-center text-3xl font-bold text-red-600 ">Tools</h1>
+
+            <div class="mt-3">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Git</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Github</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Postman</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Docker</h5>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+           //Projects
+
+
+<section id="projects">
+    <div class="bg-purple-600 mt-10" id="projects1">
+        <h1 class="font-bold text-center text-white text-5xl">Projects</h1>
+
+    <div class="main-container flex items-center py-20">
+
+        <div class="text-container  w-full flex justify-center">
+            <div>
+                <img src="project.png" height="400px" width="400px" class="shadow-lg">
+
+            </div>
+
+
+
+        </div>
+        <div class="detail-container w-full flex justify-center mt-2">
+            <h3 class="font-bold text-white text-xl"> 1. Contact manager Web App </h3>
+            <div>
+            <a id="action" th:href="@{https://github.com/Mohitoli/projectdemo.git}" class="bg-yellow-500 ml-3 font-bold  mb-3 py-3 px-5 rounded-md text-white">See Here</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+        <section  id="contact">
+            <div class="bg-white dark:bg-gray-900 mt-15 " id="contact1">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Let's Connect and Grow Together </p>
+                <form th:action="@{/Mail}" onsubmit="submitform()" method="post" id="form" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter the Email" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a Message..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 bg-blue-500 text-white rounded-2xl hover:bg-blue-900 ">Send message</button>
+                </form>
+            </div>
+            </div>
+        </section>
+
+</body>
+</html>
